@@ -1,0 +1,77 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: black;
+
+}
+#container {
+	background-image: url(calci.jpg);
+	width: 1000px;
+	height: 550px;
+	margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+#calculator {
+	background-color: #eaedef;
+	width: 400px;
+	height: 550px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+}
+#result {
+	/*background-color: red;*/
+	position: relative;
+	top: 0px;
+	width: 400px;
+	height: 150px;
+	
+}
+#history {
+	width: 400px;
+	height: 50px;
+	position: relative;
+	top: 0px;
+	font-size: 25px;
+	color: #b3ada2;
+	text-align: right;
+}
+#output {
+	width: 400px;
+	height: 70px;
+	position: relative;
+	top: 50px;
+	/*padding-top: 20px;*/
+	/*padding-bottom: 10px;*/
+	font-size: 35px;
+	text-align: right;
+}
+#numpad {
+	background-color: black;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	top: 0px;
+}
+.number , .operator, .empty {
+	width: 50px;
+	height: 40px;
+	margin: 20px;
+	box-sizing: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50%;
+	border-width: 0;
+	border-collapse: collapse;
+}
+.number, .operator {
+	cursor: pointer;
+}
+.number:active, .operator:active {
+	font-size: 14px;
+}
+.number:focus, .operator:focus, .empty:focus {
+	outline: 0;
+}
